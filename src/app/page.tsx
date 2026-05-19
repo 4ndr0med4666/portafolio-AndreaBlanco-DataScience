@@ -10,7 +10,7 @@ export default function Home() {
           Transformando datos en <br /> decisiones estratégicas.
         </h1>
         <p className={styles.heroSubtitle}>
-          Hola, soy Andrea Blanco. Me apasiona el análisis predictivo, el Machine Learning y la visualización de datos. Busco resolver problemas complejos y aportar valor mediante soluciones basadas en datos empíricos.
+          Hola, soy Andrea Blanco Rodríguez. Soy estudiante de Ciencia de Datos en la Universidad Externado de Colombia. Me apasiona descubrir patrones y generar soluciones basadas en datos que aporten valor real.
         </p>
         <div className={styles.ctaContainer}>
           <a href="#proyectos" className={styles.primaryBtn}>Ver Proyectos</a>
@@ -22,7 +22,7 @@ export default function Home() {
       <section className="animate-fade-in-up delay-100">
         <h2 className={styles.sectionTitle}>Habilidades Clave</h2>
         <div className={styles.skillsGrid}>
-          {['Python', 'SQL', 'Pandas', 'Scikit-Learn', 'Power BI', 'Machine Learning', 'Estadística', 'Git & GitHub'].map(skill => (
+          {['Python', 'SQL', 'R', 'Pandas & Numpy', 'Scikit-Learn', 'Matplotlib & Seaborn', 'PyMC & BART', 'Machine Learning'].map(skill => (
             <div key={skill} className={`glass ${styles.skillItem}`}>
               {skill}
             </div>
@@ -37,14 +37,14 @@ export default function Home() {
           
           {/* Project 1 */}
           <div className={`glass ${styles.projectCard}`}>
-            <h3 className={styles.projectTitle}>Predicción de Fuga de Clientes (Churn)</h3>
+            <h3 className={styles.projectTitle}>Análisis de Minería en Colombia</h3>
             <p className={styles.projectDesc}>
-              Desarrollé un modelo de Machine Learning utilizando Random Forest y Regresión Logística para predecir la probabilidad de que un cliente abandone el servicio, identificando las variables más críticas y logrando una precisión del 85%.
+              Exploración y modelado estadístico sobre la minería ilegal y su tránsito a la legalidad. Incluyó análisis de outliers, correlaciones y visualización para proponer estrategias de desarrollo sostenible.
             </p>
             <div className={styles.techStack}>
               <span className={styles.techTag}>Python</span>
-              <span className={styles.techTag}>Scikit-Learn</span>
               <span className={styles.techTag}>Pandas</span>
+              <span className={styles.techTag}>Seaborn</span>
             </div>
             <div className={styles.projectLinks}>
               <a href="#">Ver Repositorio ↗</a>
@@ -53,17 +53,33 @@ export default function Home() {
 
           {/* Project 2 */}
           <div className={`glass ${styles.projectCard}`}>
-            <h3 className={styles.projectTitle}>Dashboard de Ventas Interactivo</h3>
+            <h3 className={styles.projectTitle}>Clasificación de Especies de Árboles</h3>
             <p className={styles.projectDesc}>
-              Realicé un análisis exploratorio de datos (EDA) y diseñé un panel interactivo para monitorear ventas históricas, permitiendo al equipo de negocios identificar patrones estacionales y optimizar el inventario.
+              Desarrollo de un modelo supervisado usando Random Forest para clasificar árboles según variables morfológicas y ambientales. Se optimizaron hiperparámetros con GridSearchCV para mejorar métricas clave.
             </p>
             <div className={styles.techStack}>
-              <span className={styles.techTag}>SQL</span>
-              <span className={styles.techTag}>Power BI</span>
-              <span className={styles.techTag}>ETL</span>
+              <span className={styles.techTag}>Python</span>
+              <span className={styles.techTag}>Scikit-Learn</span>
+              <span className={styles.techTag}>GridSearchCV</span>
             </div>
             <div className={styles.projectLinks}>
-              <a href="#">Ver Dashboard ↗</a>
+              <a href="#">Ver Modelo ↗</a>
+            </div>
+          </div>
+
+          {/* Project 3 */}
+          <div className={`glass ${styles.projectCard}`}>
+            <h3 className={styles.projectTitle}>Modelado Bayesiano Predictivo</h3>
+            <p className={styles.projectDesc}>
+              Implementación de regresión bayesiana con árboles aditivos (BART) usando pymc y bartpy. Exploración de intervalos de credibilidad para interpretar la incertidumbre en predicciones continuas.
+            </p>
+            <div className={styles.techStack}>
+              <span className={styles.techTag}>PyMC</span>
+              <span className={styles.techTag}>Bartpy</span>
+              <span className={styles.techTag}>Bayesian ML</span>
+            </div>
+            <div className={styles.projectLinks}>
+              <a href="#">Ver Estudio ↗</a>
             </div>
           </div>
 
@@ -72,10 +88,11 @@ export default function Home() {
 
       {/* Contact Section */}
       <footer className={`${styles.footer} animate-fade-in-up delay-300`}>
-        <p>© {new Date().getFullYear()} Andrea Blanco. Construido con Next.js y mucha pasión.</p>
+        <p>© {new Date().getFullYear()} Andrea Blanco Rodríguez. Construido con Next.js.</p>
+        <p style={{ marginTop: '0.5rem', fontSize: '0.9rem' }}>Bogotá, Colombia</p>
         <div className={styles.footerLinks}>
-          <a href="mailto:tu-correo@ejemplo.com">Email</a>
-          <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="mailto:andrea.blanco2@est.uexternado.edu.co">andrea.blanco2@est.uexternado.edu.co</a>
+          <a href="tel:+573160441721">316 044 1721</a>
           <a href="https://github.com/4ndr0med4666" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </footer>
