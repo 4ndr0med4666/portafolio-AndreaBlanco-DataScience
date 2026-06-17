@@ -22,8 +22,7 @@ export default function Home() {
       <section className="animate-fade-in-up delay-100">
         <h2 className={styles.sectionTitle}>Habilidades Clave</h2>
         <div className={styles.skillsGrid}>
-          {['Python', 'SQL', 'R', 'Pandas & Numpy', 'Scikit-Learn', 'Matplotlib & Seaborn', 'PyMC & BART', 'Machine Learning'].map(skill => (
-            <div key={skill} className={`glass ${styles.skillItem}`}>
+          {['Python', 'SQL', 'R', 'PyTorch', 'LangChain', 'PyMC & BART', 'Pandas & Numpy', 'Scikit-Learn', 'Azure', 'PostgreSQL / Supabase'].map(skill => (            <div key={skill} className={`glass ${styles.skillItem}`}>
               {skill}
             </div>
           ))}
@@ -82,6 +81,53 @@ export default function Home() {
               <a href="#">Ver Estudio ↗</a>
             </div>
           </div>
+          {/* Project 4 */}
+            <div className={`glass ${styles.projectCard}`}>
+            <h3 className={styles.projectTitle}>Agente RAG con LangChain</h3>
+            <p className={styles.projectDesc}>
+              Implementé la capa de agente (patrón ReAct) de un sistema RAG grupal, con búsqueda vectorial en ChromaDB y fallback a ArXiv. Resolví un bug crítico de importación en código generado por IA.
+            </p>
+            <div className={styles.techStack}>
+              <span className={styles.techTag}>LangChain</span>
+              <span className={styles.techTag}>ChromaDB</span>
+              <span className={styles.techTag}>Python</span>
+            </div>
+            <div className={styles.projectLinks}>
+    <a href="https://github.com/Fernanda034/agente-rag-deeplearning" target="_blank" rel="noreferrer">Ver Repositorio ↗</a>
+  </div>
+</div>
+
+{/* Project 5 */}
+<div className={`glass ${styles.projectCard}`}>
+  <h3 className={styles.projectTitle}>RentAI — Matching de Arrendamiento</h3>
+  <p className={styles.projectDesc}>
+    Colaboré en el modelo de datos (PostgreSQL/Supabase) y en scripts de web scraping para una plataforma de matching bilateral entre arrendatarios y propietarios en Bogotá.
+  </p>
+  <div className={styles.techStack}>
+    <span className={styles.techTag}>PostgreSQL</span>
+    <span className={styles.techTag}>Supabase</span>
+    <span className={styles.techTag}>Web Scraping</span>
+  </div>
+  <div className={styles.projectLinks}>
+    <a href="https://github.com/killerdoller/rent-ai" target="_blank" rel="noreferrer">Ver Repositorio ↗</a>
+  </div>
+</div>
+
+{/* Project 6 */}
+<div className={`glass ${styles.projectCard}`}>
+  <h3 className={styles.projectTitle}>Agricultura de Precisión — Finca Yarumo</h3>
+  <p className={styles.projectDesc}>
+    Proyecto de grado: sistema IoT con sensores LoRaWAN integrado a Azure (IoT Hub, Event Hub, Functions, CosmosDB) y visualización en Power BI, en conjunto con Controles Empresariales.
+  </p>
+  <div className={styles.techStack}>
+    <span className={styles.techTag}>Azure</span>
+    <span className={styles.techTag}>IoT</span>
+    <span className={styles.techTag}>Power BI</span>
+  </div>
+  <div className={styles.projectLinks}>
+    <a href="#">Proyecto de Grado</a>
+  </div>
+</div>
 
         </div>
       </section>
